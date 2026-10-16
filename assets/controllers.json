@@ -1,0 +1,40 @@
+{
+    "controllers": {
+        "@solidworx/platform": {
+            "modal": {
+                "enabled": true,
+                "fetch": "lazy"
+            },
+            "modal-prefill": {
+                "enabled": true,
+                "fetch": "lazy"
+            },
+            "csrf-protection": {
+                "enabled": true,
+                "fetch": "lazy"
+            },
+            "loading": {
+                "enabled": true,
+                "fetch": "lazy"
+            },
+            "text-editor": {
+                "enabled": true,
+                "fetch": "lazy"
+            },
+            "two-factor": {
+                "enabled": true,
+                "fetch": "lazy"
+            }
+        },
+        "@symfony/ux-live-component": {
+            "live": {
+                "enabled": true,
+                "fetch": "eager",
+                "autoimport": {
+                    "@symfony/ux-live-component/dist/live.min.css": true
+                }
+            }
+        }
+    },
+    "entrypoints": []
+}

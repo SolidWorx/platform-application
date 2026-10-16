@@ -1,0 +1,18 @@
+{
+    "devDependencies": {
+        "@babel/core": "^8.0.0",
+        "@babel/preset-env": "^8.0.0",
+        "@symfony/ux-live-component": "file:vendor/symfony/ux-live-component/assets",
+        "@tabler/core": "^1.5.1",
+        "babel-plugin-polyfill-corejs3": "^1.0.0",
+        "core-js": "^3.49.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev": "../node_modules/.bin/encore dev",
+        "watch": "../node_modules/.bin/encore dev --watch",
+        "build": "../node_modules/.bin/encore production"
+    },
+    "type": "module"
+}

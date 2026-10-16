@@ -1,0 +1,11 @@
+{% extends ui_layout_app %}
+
+{% block page_pretitle %}Test app{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+    <twig:Ui:Card title="It works">
+        <p>This app runs against the platform checkout it lives in — edit the platform's PHP or
+            Twig and reload the page.</p>
+    </twig:Ui:Card>
+{% endblock %}

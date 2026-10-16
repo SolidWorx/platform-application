@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=./vendor/solidworx/platform/platform-schema.json
+platform:
+  name: 'Platform Test App'
+  version: '1.0.0'
+
+  security:
+    two_factor:
+      # Flip to true to test the 2FA flow — the kernel registers SchebTwoFactorBundle itself.
+      enabled: false
+      base_template: '@Ui/Layout/base.html.twig'
+
+  doctrine:
+    types:
+      enable_utc_date: true
+
+  models:
+    user: App\Entity\User
+
+ui:
+  icon_pack: tabler
+
+# The SaaS bundle needs entities of its own (a Subscription implementing SubscribableInterface,
+# a trial user entity) so it is left out of config/bundles.php. Add it back there together with
+# a `saas:` section here to test subscriptions — see docs/configuration/index.md.
